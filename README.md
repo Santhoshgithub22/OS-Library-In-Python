@@ -38,13 +38,16 @@ Here are basic examples for each of the functionalities you listed:
 
 ```
 import os
+```
 
 # Get current working directory
+```
 cwd = os.getcwd()
 print("Current working directory:", cwd)
 ```
-```
+
 # List files and directories
+```
 files = os.listdir(cwd)
 print("Files and directories in current directory:", files)
 ```
@@ -56,51 +59,74 @@ os.mkdir(new_dir)
 ```
 
 # Check if a path exists
+```
 path = os.path.join(cwd, 'file.txt')
 if os.path.exists(path):
     print("Path exists:", path)
 else:
     print("Path does not exist:", path)
-
+```
+```
 import os
+```
 
 # Working with Files and Directories
 
-# Get the current working directory
+#### Get the current working directory
+```
 cwd = os.getcwd()
 print("Current working directory:", cwd)
+```
 
 # Change the current working directory to the specified path
+```
 os.chdir('/path/to/new/directory')
 print("New working directory:", os.getcwd())
+```
 
 # List files and directories in the specified directory
+```
 files = os.listdir()
 print("Files and directories:", files)
+```
 
 # Create a new directory
+```
 os.mkdir('new_directory')
+```
 
 # Create directories recursively
+```
 os.makedirs('parent_dir/sub_dir')
+```
 
 # Remove a file
+```
 os.remove('file.txt')
+```
 
 # Remove an empty directory
+```
 os.rmdir('empty_directory')
+```
 
 # Remove directories recursively
+```
 os.removedirs('parent_dir/sub_dir')
+```
 
 # Rename a file or directory
+```
 os.rename('old_name.txt', 'new_name.txt')
+```
 
 # Check if a path exists
+```
 if os.path.exists('file.txt'):
     print("Path exists")
 else:
     print("Path does not exist")
+```
 
 # Environment Variables
 
