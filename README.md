@@ -110,7 +110,7 @@ os.remove('file.txt')
 os.rmdir('empty_directory')
 ```
 
-# Remove directories recursively
+#### Remove directories recursively
 ```
 os.removedirs('parent_dir/sub_dir')
 ```
