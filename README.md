@@ -42,14 +42,18 @@ import os
 # Get current working directory
 cwd = os.getcwd()
 print("Current working directory:", cwd)
-
+```
+```
 # List files and directories
 files = os.listdir(cwd)
 print("Files and directories in current directory:", files)
+```
 
 # Create a new directory
+```
 new_dir = os.path.join(cwd, 'new_directory')
 os.mkdir(new_dir)
+```
 
 # Check if a path exists
 path = os.path.join(cwd, 'file.txt')
