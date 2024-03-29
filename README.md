@@ -40,25 +40,25 @@ Here are basic examples for each of the functionalities you listed:
 import os
 ```
 
-# Get current working directory
+#### Get current working directory
 ```
 cwd = os.getcwd()
 print("Current working directory:", cwd)
 ```
 
-# List files and directories
+#### List files and directories
 ```
 files = os.listdir(cwd)
 print("Files and directories in current directory:", files)
 ```
 
-# Create a new directory
+#### Create a new directory
 ```
 new_dir = os.path.join(cwd, 'new_directory')
 os.mkdir(new_dir)
 ```
 
-# Check if a path exists
+#### Check if a path exists
 ```
 path = os.path.join(cwd, 'file.txt')
 if os.path.exists(path):
@@ -78,34 +78,34 @@ cwd = os.getcwd()
 print("Current working directory:", cwd)
 ```
 
-# Change the current working directory to the specified path
+#### Change the current working directory to the specified path
 ```
 os.chdir('/path/to/new/directory')
 print("New working directory:", os.getcwd())
 ```
 
-# List files and directories in the specified directory
+#### List files and directories in the specified directory
 ```
 files = os.listdir()
 print("Files and directories:", files)
 ```
 
-# Create a new directory
+#### Create a new directory
 ```
 os.mkdir('new_directory')
 ```
 
-# Create directories recursively
+#### Create directories recursively
 ```
 os.makedirs('parent_dir/sub_dir')
 ```
 
-# Remove a file
+#### Remove a file
 ```
 os.remove('file.txt')
 ```
 
-# Remove an empty directory
+#### Remove an empty directory
 ```
 os.rmdir('empty_directory')
 ```
@@ -115,12 +115,12 @@ os.rmdir('empty_directory')
 os.removedirs('parent_dir/sub_dir')
 ```
 
-# Rename a file or directory
+#### Rename a file or directory
 ```
 os.rename('old_name.txt', 'new_name.txt')
 ```
 
-# Check if a path exists
+#### Check if a path exists
 ```
 if os.path.exists('file.txt'):
     print("Path exists")
@@ -130,41 +130,59 @@ else:
 
 # Environment Variables
 
-# Get the value of the specified environment variable
+#### Get the value of the specified environment variable
+```
 home_dir = os.getenv('HOME')
 print("Home directory:", home_dir)
+```
 
-# Set the value of the specified environment variable
+#### Set the value of the specified environment variable
+```
 os.putenv('MY_VAR', 'value')
+```
 
-# Unset (delete) the specified environment variable
+#### Unset (delete) the specified environment variable
+```
 os.unsetenv('MY_VAR')
+```
 
 # Miscellaneous
 
-# Execute the command in the system shell
+#### Execute the command in the system shell
+```
 os.system('ls -l')
+```
 
-# Join one or more path components intelligently
+#### Join one or more path components intelligently
+```
 path = os.path.join('/path/to', 'directory', 'file.txt')
 print("Joined path:", path)
+```
 
-# Return the absolute version of a path
+#### Return the absolute version of a path
+```
 abs_path = os.path.abspath('file.txt')
 print("Absolute path:", abs_path)
+```
 
-# Return the base name of a path
+#### Return the base name of a path
+```
 basename = os.path.basename('/path/to/file.txt')
 print("Base name:", basename)
+```
 
-# Return the directory name of a path
+#### Return the directory name of a path
+```
 dirname = os.path.dirname('/path/to/file.txt')
 print("Directory name:", dirname)
+```
 
-# Check if a path is a regular file
+#### Check if a path is a regular file
+```
 print("Is file?", os.path.isfile('/path/to/file.txt'))
+```
 
-# Check if a path is a directory
+#### Check if a path is a directory
+```
 print("Is directory?", os.path.isdir('/path/to/directory'))
-
 ```
